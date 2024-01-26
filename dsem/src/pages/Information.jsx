@@ -1,4 +1,5 @@
 //rafce
+// Ejemplo
 import React from 'react'
 // Importar una imágen
 import Burrito from "../assets/images/burrito.jpg"
