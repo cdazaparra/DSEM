@@ -5,17 +5,17 @@ import React from 'react'
   import Logo from "../assets/images/logo.png"
   // Nombre del proyecto
   // Menú
+// Estilos
+import '../styles/Base.sass'
 import Menu from './Menu'
 const Header = () => {
   return (
-    <div>
-      <div>
-        <img src={Logo} alt="Logo" />
+    <div  className='Header'>
+      <div  className='headerContainer'>
+        <img src={Logo} alt="Logo"  className='headercontainerLogo'/>
+        <h1 className='headercontainerName'>Proyecto para aprender React</h1>
       </div>
-      <div>
-        <h1>Proyecto para aprender React</h1>
-      </div>
-      <div>
+      <div  className='headerMenu'>
         <Menu />
       </div>
     </div>

@@ -2,11 +2,11 @@ import React from 'react'
 
 const Menu = () => {
     return (
-        <div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/information">Information</a></li>
-                <li><a href="/prueba">Prueba</a></li>
+        <div  className='Menu'>
+            <ul className='menuList'>
+                <li className='menulistItem'><a href="/" className='menulistitemLink'>Home</a></li>
+                <li className='menulistItem'><a href="/information" className='menulistitemLink'>Information</a></li>
+                <li className='menulistItem'><a href="/prueba" className='menulistitemLink'>Prueba</a></li>
             </ul>
         </div>
     )
