@@ -2,7 +2,7 @@
 // Librerias de React
 import React from 'react'
 // Importar una imágen
-import Arbolito from "../assets/images/Arbolito.webp"
+import Arbolito from "../assets/images/arbolito.png"
 import Matica from "../assets/images/descarga.jpg"
 const Home = () => {
   return (
