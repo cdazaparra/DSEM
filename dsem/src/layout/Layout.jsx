@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Layout = () => {
+  const navigation = useNavigation();
   return (
     <div className="Layout">
         <Header />
