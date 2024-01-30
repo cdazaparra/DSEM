@@ -1,6 +1,8 @@
 //rafce
 // Librerias de React
 import React from 'react'
+// Importar estilos
+import "../styles/Home.sass"
 // Importar una imágen
 import Arbolito from "../assets/images/arbolito.png"
 import Matica from "../assets/images/descarga.jpg"
