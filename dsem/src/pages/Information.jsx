@@ -6,17 +6,25 @@ import Burrito from "../assets/images/burrito.jpg"
 import Burrito2 from "../assets/images/burrito2.jpg"
 const Information = () => {
   return (
-    <div>
+    <div className='Information'>
     <hr></hr>
     <h2>Information</h2>
+    <div className='informationCard'>
     <h3>Esto es un ejemplo de un subtítulo</h3>
-    <img src={Burrito} alt='Esto es un arbolito'></img>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt sint eius. Optio aperiam blanditiis maiores ex reprehenderit iste, omnis ratione delectus mollitia consectetur. Doloribus veritatis consequuntur et voluptas qui!</p>
+      <div  className='informationcardData'>
+      <img className='informationcarddataImg' src={Burrito} alt='Esto es un arbolito'></img>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt sint eius. Optio aperiam blanditiis maiores ex reprehenderit iste, omnis ratione delectus mollitia consectetur. Doloribus veritatis consequuntur et voluptas qui!</p>
+      </div>
+    </div>
     <hr></hr>
     <h2>Ejemplo 2</h2>
-    <h3>Esto es otro ejemplo de un subtítulo</h3>
-    <img src={Burrito2} alt='Esto es un arbolito'></img>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt sint eius. Optio aperiam blanditiis maiores ex reprehenderit iste, omnis ratione delectus mollitia consectetur. Doloribus veritatis consequuntur et voluptas qui!</p>
+    <div className='informationCard'>
+    <h3>Esto es un ejemplo de un subtítulo</h3>
+      <div  className='informationcardData'>
+      <img className='informationcarddataImg' src={Burrito2} alt='Esto es un arbolito'></img>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt sint eius. Optio aperiam blanditiis maiores ex reprehenderit iste, omnis ratione delectus mollitia consectetur. Doloribus veritatis consequuntur et voluptas qui!</p>
+      </div>
+    </div>
     <hr></hr>
   </div>
   )
