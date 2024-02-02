@@ -1,3 +1,4 @@
+//
 import React from 'react'
 import light from "../assets/icons/idea.png"
 const Menu = () => {

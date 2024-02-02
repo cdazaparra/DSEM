@@ -6,11 +6,15 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider } from "react-router-dom";
 // Esto sirve para cargar las rutas
 import router from './routes/router';
+// Importando el proveedor
+import InterationProvider from "./providers/InteractionProvider"
 
 
 // Busca al elemento root y dentro de el carga todo
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <InterationProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </InterationProvider>
   </React.StrictMode>,
 )
