@@ -1,6 +1,6 @@
 //rafce
 // Librerias de React
-import React from 'react'
+import React from "react";
 // Crear el enrutador(Los links del Ménu)
 import { createBrowserRouter } from "react-router-dom";
 // Páginas
@@ -9,7 +9,7 @@ import NotFound from '../pages/NotFound';
 import Information from '../pages/Information';
 import Prueba from '../pages/Prueba';
 // Componete Base
-import Layout from '../layout/Layout';
+import Layout from "../layout/Layout";
 
 // Definir lo que hay dentro del enrutador
 const router = createBrowserRouter([

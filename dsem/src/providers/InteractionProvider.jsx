@@ -1,24 +1,28 @@
 // Importamos React
 // Importamos useState para saber que estado tiene la variable global del contexto
-import React, {useState} from "react"
+import React, { useState } from "react";
 // Importamos el contexto para llenarlo con lo que se quiere
-import { InterationContext } from "../context/InterationContext"
+import { InteractionContex } from "../context/InteractionContex";
 // Se crear el proveedor de colores
-const InterationProvider=({children})=>{
-    const [color, setColor]= useState(false)
-    const handleColor=()=>{
-        setColor(!color)
-    }
+const InteractionProvider = ({ children }) => {
+    const [color, setColor] = useState(false);
     const colorSelected = color ? 'Dark' : 'Light'
-    // if color
-    //     Dark
-    // else
-    //     Light
+    const pageColorSelected = color ? 'pageDark' : 'pageLight'
+    const handleColor = () => {
+        setColor(!color);
+    };
     return(
-        <InterationContext.Provider value={{color, handleColor, colorSelected}}>
-            {children}
-        </InterationContext.Provider>
-    )
-}
+        <InteractionContex.Provider
+        value={{
+            color,
+            handleColor,
+            colorSelected,
+            pageColorSelected
+        }}
+        >
+              {children}
+    </InteractionContex.Provider>
+  );
+};
 
-export default InterationProvider
+export default InteractionProvider;

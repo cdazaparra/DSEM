@@ -1,11 +1,17 @@
 // Librerias de React
 import React from 'react'
+// Se importa la variable global par administrar el color
+import { useInteractionContex } from "../context/InteractionContex";
+
 // Footer
 // Firma
 // Redes sociales
 const Footer = () => {
+  // Se trae la variable que contiene el nombre del tema del contexto
+  const { colorSelected } = useInteractionContex();
+  console.log(colorSelected)
   return (
-    <div className='Footer'>
+    <div className={`Footer ${colorSelected}`}>
       <h3 className='footerFirma'>Firma</h3>
       <ul className='footerRed'>
         <li className='footerredItem'>
