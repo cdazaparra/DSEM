@@ -12,12 +12,15 @@ import {dataHome} from '../helpers/data'
 const Home = () => {
   // Se trae la variable que contiene el nombre del tema del contexto
   const { pageColorSelected}= useInteractionContex()
-  {dataHome.map((data)=>{
-    return(
-      <HomeData></HomeData>
-    )
-  })
-}
+  return(
+    <div className="Container">
+        {dataHome.map((data=>{
+            return(
+                <HomeData data={data}></HomeData>
+            )
+        }))}
+    </div>
+  )
 }
 
 export default Home
