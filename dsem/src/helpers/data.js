@@ -52,5 +52,23 @@ export const dataHome = [
         image: Cinco,
         imageAlt: "Home",
         link: "/",
+    },
+    {
+        id: 6,
+        title: "Prueba",
+        subtitle: "Prueba",
+        description: "Prueba",
+        image: Seis,
+        imageAlt: "Prueba",
+        link: "/prueba",
+    },
+    {
+        id: 7,
+        title: "Information",
+        subtitle: "Infomation",
+        description: "Information",
+        image: Siete,
+        imageAlt: "Information",
+        link: "/information",
     }
 ]

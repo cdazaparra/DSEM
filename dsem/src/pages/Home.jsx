@@ -14,14 +14,7 @@ const Home = () => {
   const { pageColorSelected}= useInteractionContex()
   {dataHome.map((data)=>{
     return(
-      <div>
-        <HomeData data={data}></HomeData>
-          <div className={`${pageColorSelected}`}>
-            <div key={data.id}>
-            <HomeData data={data}></HomeData>
-            </div>
-          </div>
-          </div>
+      <HomeData></HomeData>
     )
   })
 }
