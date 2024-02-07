@@ -51,11 +51,12 @@ const PokeApiGenerator = () => {
         onChange={searchPokemon}
       ></input>
     </div>
+    <div className="pokeList">
 {pokemonsList.map((pokemons) => (
     <div key={pokemons.id} >
       <div>
         {validator && (
-          <div  className="pokeList">
+          <div >
             <PokeCard
               pokemons={pokemons}
               key={pokemons.id}
@@ -64,16 +65,16 @@ const PokeApiGenerator = () => {
           </div>
         )}
       </div>
-      <div>
+      <div className="pokeList">
         {!validator && (
-          <div  >
+          <div  c>
             {pokemons.name.includes(search) && (
-              <div>
+              <div c>
                 <PokeCard
                   pokemons={pokemons}
                   key={pokemons.id}
                   search={search}
-                  className="pokeList"></PokeCard>
+                  ></PokeCard>
               </div>
             )}
           </div>
@@ -81,6 +82,7 @@ const PokeApiGenerator = () => {
       </div>
     </div>
   ))}
+</div>
 </div>
 )}
 
