@@ -34,7 +34,8 @@ const RickAndMortyGenerator = () => {
               character={character}
               key={character.id}
             ></RickAndMorthyCard>
-          ))}</div>
+          ))}
+          </div>
           </div>
   );
 }
